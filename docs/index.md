@@ -1,5 +1,14 @@
 # Totally Accurate Fantasy RPG game 
 
+## Development Log
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 ## Theme
 
 A top-down 3D soft-body physics RPG dungeon crawler, aimed to be the most immersive (and accurate) fantasy RPG game created.
