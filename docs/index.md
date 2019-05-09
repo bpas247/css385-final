@@ -7,7 +7,7 @@
 
 #### Theme
 
-A top-down 3D soft-body physics RPG dungeon crawler, aimed to be the most immersive (and accurate) fantasy RPG game created.
+A top-down 3D ragdoll physics RPG dungeon crawler, aimed to be the most immersive (and accurate) fantasy RPG game created.
 
 #### Mechanics
 
