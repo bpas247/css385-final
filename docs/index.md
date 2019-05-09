@@ -33,7 +33,7 @@ The player will be able to grab weapons that the enemies drop. These weapons wil
 
 #### Innovative
 
-The soft-body physics mechanic is heavily-inspired by the game `Totally Accurate Battle Simulator`. We are intrigued by the random chaos and inconsistency that this mechanic adds to the gameplay, and will also require us to use advanced Unity API's to implement.
+The ragdoll physics mechanic is heavily-inspired by the game `Totally Accurate Battle Simulator`. We are intrigued by the random chaos and inconsistency that this mechanic adds to the gameplay, and will also require us to use advanced Unity API's to implement.
 
 #### Fun
 
@@ -41,7 +41,7 @@ Player progression, random chaos, rooms that follow different themes and emotion
 
 #### Challenging
 
-The soft-body physics adds a bit of chance on whether or not your hits will connect with the enemy. The randomness of the loot drops adds a bit more chance, as you might have a playthrough that doesn't give you any good weapons whereas the next playthrough you could get one of the best weapons early on in the game.
+The ragdoll physics adds a bit of chance on whether or not your hits will connect with the enemy. The randomness of the loot drops adds a bit more chance, as you might have a playthrough that doesn't give you any good weapons whereas the next playthrough you could get one of the best weapons early on in the game.
 
 ## Playable Game 
 ## Playtesting Reports 
