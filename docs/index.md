@@ -57,6 +57,9 @@ During the prototype process, I helped with brainbraiming ideas and mechenics fo
 - initialized final project repository (this one).
 - Deployed website via GitHub Pages and Jekyll.
 
+##### Jeremiah's Log
+
+During the creation of the paper prototype, I aided in brainstorming ideas of initial game flow. After our process I sketched a prototype level, the initial inventory UI and a prototype of what a weapon drop would look like in our game.
 
 ## Playable Game 
 ## Playtesting Reports 
