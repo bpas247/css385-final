@@ -43,6 +43,10 @@ Player progression, random chaos, rooms that follow different themes and emotion
 
 The ragdoll physics adds a bit of chance on whether or not your hits will connect with the enemy. The randomness of the loot drops adds a bit more chance, as you might have a playthrough that doesn't give you any good weapons whereas the next playthrough you could get one of the best weapons early on in the game.
 
+#### Phuc's Log 
+
+During the prototype process, I helped with brainbraiming ideas and mechenics for the games.  I also skeched out the 1st room filled up with objects  and the UI game scene with XP and heath process bars,  objectives box, and weapon box
+
 ## Playable Game 
 ## Playtesting Reports 
 ## Credits 
