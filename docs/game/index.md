@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+# Totally Accurate Fantasy RPG game 
+
+## [Home](../index.md)
+
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Totally Accurate RPG Fantasy Game</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <title>Totally Accurate RPG Fantasy Game</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
@@ -13,7 +15,6 @@
     </script>
   </head>
   <body>
-    <h1 style="text-align: center"><a href="../">Homepage</a></h1>
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
@@ -23,4 +24,4 @@
       </div>
     </div>
   </body>
-</html>
+</html> 

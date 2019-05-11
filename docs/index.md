@@ -7,7 +7,7 @@
 
 ## Playable Game 
 
-A playable demo of the game can be found [here](game/index.html)
+A playable demo of the game can be found [here](game/index.md)
 
 ## Playtesting Reports 
 ## Credits 
