@@ -62,6 +62,9 @@ During the prototype process, I helped with brainbraiming ideas and mechenics fo
 During the creation of the paper prototype, I aided in brainstorming ideas of initial game flow. After our process I sketched a prototype level, the initial inventory UI and a prototype of what a weapon drop would look like in our game.
 
 ## Playable Game 
+
+A playable demo of the game can be found [here](game/index.html)
+
 ## Playtesting Reports 
 ## Credits 
 ## References 
