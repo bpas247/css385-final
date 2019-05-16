@@ -30,7 +30,7 @@ public class SwordScript : MonoBehaviour
 			{
 				Destroy(enemy);
 			}
-			collision.gameObject.GetComponent<Rigidbody>().AddForce(-collision.GetContact(0).normal * 600, ForceMode.Impulse);
+			collision.gameObject.GetComponent<Rigidbody>().AddForce(-collision.GetContact(0).normal * 400, ForceMode.Impulse);
 		}
 	}
 }

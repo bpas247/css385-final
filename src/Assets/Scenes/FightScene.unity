@@ -1324,5 +1324,10 @@ PrefabInstance:
       propertyPath: taggedToKill
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2685309137813781815, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: enemyHealth
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed81ef19f144a344593361f8ba25d0ed, type: 3}
