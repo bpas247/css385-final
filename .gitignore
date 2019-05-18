@@ -64,3 +64,8 @@ gh-pages/
 pkg/
 test/dest
 tmp/*
+
+# Files that are just generally ignored
+docs/game/TemplateData/favicon.ico
+docs/game/index.html
+docs/game/TemplateData/style.css
