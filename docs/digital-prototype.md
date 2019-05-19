@@ -6,6 +6,11 @@
 
 ### Documentation of Assigned Work (individual logs)
 
+#### Phuc's Log 
+
+- Started working the design of the rooms with different themes 
+- Started working on testing with the player inside the room.
+
 #### Brady's Log
 
 - Designed and implemented Fight Scene
