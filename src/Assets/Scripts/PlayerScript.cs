@@ -28,12 +28,15 @@ public class PlayerScript : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-		MoveEffect(KeyCode.W, Vector3.forward);
-		MoveEffect(KeyCode.S, Vector3.back);
-		MoveEffect(KeyCode.A, Vector3.left);
-		MoveEffect(KeyCode.D, Vector3.right);
+        if(GetComponent<AttributesScript>().GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0)
+        {
+            MoveEffect(KeyCode.W, Vector3.forward);
+            MoveEffect(KeyCode.S, Vector3.back);
+            MoveEffect(KeyCode.A, Vector3.left);
+            MoveEffect(KeyCode.D, Vector3.right);
 
-		RotateEffect(KeyCode.LeftArrow, -Vector3.up);
-		RotateEffect(KeyCode.RightArrow, Vector3.up);
-	}
+            RotateEffect(KeyCode.LeftArrow, -Vector3.up);
+            RotateEffect(KeyCode.RightArrow, Vector3.up);
+        }
+    }
 }

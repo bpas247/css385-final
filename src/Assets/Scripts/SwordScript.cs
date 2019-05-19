@@ -19,13 +19,22 @@ public class SwordScript : MonoBehaviour
 	private void OnCollisionEnter(Collision collision)
 	{
         AttributesScript myAttr = transform.GetComponentInParent<AttributesScript>();
-        if (myAttr.GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0 && collision.gameObject.CompareTag(taggedToKill))
+        if (myAttr.GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0)
 		{
-            AttributesScript attr = collision.transform.GetComponentInParent<AttributesScript>();
-            attr.Decrease(AttributesScript.ATTRIBUTES.HEALTH, 1);
 
-            if(attr.GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0)
-                collision.gameObject.GetComponent<Rigidbody>().AddForce(-collision.GetContact(0).normal * 400, ForceMode.Impulse);
-		}
+            if(collision.gameObject.CompareTag(taggedToKill))
+            {
+                AttributesScript attr = collision.transform.GetComponentInParent<AttributesScript>();
+                attr.Decrease(AttributesScript.ATTRIBUTES.HEALTH, 1);
+
+                if (attr.GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0)
+                    collision.gameObject.GetComponent<Rigidbody>().AddForce(-collision.GetContact(0).normal * 400, ForceMode.Impulse);
+            }
+
+            if(gameObject.tag.Equals("Player") && collision.gameObject.CompareTag("Weapon"))
+            {
+                collision.gameObject.GetComponent<Rigidbody>().AddForce(-collision.GetContact(0).normal * 500, ForceMode.Impulse);
+            }
+        }
 	}
 }
