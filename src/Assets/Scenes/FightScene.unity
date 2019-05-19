@@ -405,6 +405,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 182472589}
+--- !u!4 &681981546 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1270929899348662814, guid: 11a98ea2bc9f61d48b68624ddfd15f66,
+    type: 3}
+  m_PrefabInstance: {fileID: 1270929900214233020}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &815994503
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +847,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8902639238433520750, guid: 11a98ea2bc9f61d48b68624ddfd15f66,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -3.2499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8902639238433520750, guid: 11a98ea2bc9f61d48b68624ddfd15f66,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11a98ea2bc9f61d48b68624ddfd15f66, type: 3}
 --- !u!1001 &2527157387360411834
@@ -1028,6 +1044,28 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852883080, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
+      propertyPath: myMovingPart
+      value: 
+      objectReference: {fileID: 681981546}
+    - target: {fileID: 1852883080, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 681981546}
+    - target: {fileID: 1852883080, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
+      propertyPath: movementSpeed
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777487828797420788, guid: c906e3b3f80b16b4582b1f0a78ac26e3,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -3.2499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777487828797420788, guid: c906e3b3f80b16b4582b1f0a78ac26e3,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
