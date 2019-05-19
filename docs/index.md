@@ -4,6 +4,7 @@
 ## Development Log 
 
 - [Paper Prototype](paper-prototype.md)
+- [Digital Prototype](digital-prototype.md)
 
 ## Playable Game 
 
