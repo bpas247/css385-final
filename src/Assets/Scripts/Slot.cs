@@ -1,18 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class ItemTooltip : MonoBehaviour
+public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    public GameObject item;
+    public bool empty;
+    public Texture2D icon;
+
+    public int weaponDamage = 0;
+    public double weaponSpeed = 0;
+    public double weaponRange = 0;
 
     string tooltipText = "Attack: 1\nSpeed: 1\nRange: 1";
-
     private string currentTooltipText = "";
     GUIStyle guiStyleFore;
     GUIStyle guiStyleBack;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         guiStyleFore = new GUIStyle();
@@ -23,15 +29,31 @@ public class ItemTooltip : MonoBehaviour
         guiStyleBack.normal.textColor = Color.black;
         guiStyleBack.alignment = TextAnchor.UpperCenter;
         guiStyleBack.wordWrap = true;
+
+        tooltipText = "Attack: " + weaponDamage + "\nSpeed: " + weaponSpeed + "\nRange: " + weaponRange;
+    }
+
+    private void Update()
+    {
+       
+    }
+
+    public void UpdateSlot()
+    {
+        this.GetComponent<Image>().sprite = Sprite.Create(icon, new Rect(0, 0, icon.width, icon.height) , new Vector2(0.5f, 0.5f));
     }
 
     // Update is called once per frame
-    private void OnMouseEnter()
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        currentTooltipText = tooltipText;
+        if(empty == false)
+        {
+            currentTooltipText = tooltipText;
+        }
     }
+    
 
-    private void OnMouseExit()
+    public void OnPointerExit(PointerEventData eventData)
     {
         currentTooltipText = "";
     }
