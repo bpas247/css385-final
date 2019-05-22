@@ -25,10 +25,12 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         guiStyleFore.normal.textColor = Color.white;
         guiStyleFore.alignment = TextAnchor.UpperCenter;
         guiStyleFore.wordWrap = true;
+        guiStyleFore.fontSize = 24;
         guiStyleBack = new GUIStyle();
         guiStyleBack.normal.textColor = Color.black;
         guiStyleBack.alignment = TextAnchor.UpperCenter;
         guiStyleBack.wordWrap = true;
+        guiStyleBack.fontSize = 24;
 
         tooltipText = "Attack: " + weaponDamage + "\nSpeed: " + weaponSpeed + "\nRange: " + weaponRange;
     }
@@ -48,6 +50,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         if(empty == false)
         {
+            tooltipText = "Attack: " + weaponDamage + "\nSpeed: " + weaponSpeed + "\nRange: " + weaponRange;
             currentTooltipText = tooltipText;
         }
     }
