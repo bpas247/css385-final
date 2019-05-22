@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 2
   rotateSpeed: 50
-  isDead: 0
+  itemToDrop: {fileID: 128379820175121341, guid: 68b4a43b097d9364faa54bbe4b28c40a,
+    type: 3}
+  player: {fileID: 0}
 --- !u!114 &1852883081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,7 +39,7 @@ PrefabInstance:
     - target: {fileID: 9200530942805780012, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: EnemyPrefab
       objectReference: {fileID: 0}
     - target: {fileID: 9200530942805780012, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
@@ -114,16 +116,6 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: -0.75
       objectReference: {fileID: 0}
-    - target: {fileID: 1603468764780061024, guid: ed81ef19f144a344593361f8ba25d0ed,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7547962659223658304, guid: ed81ef19f144a344593361f8ba25d0ed,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4613213738891018100, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: taggedToKill
@@ -148,11 +140,6 @@ PrefabInstance:
         type: 3}
       propertyPath: taggedToKill
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5697379418954265299, guid: ed81ef19f144a344593361f8ba25d0ed,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1818861645066254048, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
@@ -189,21 +176,6 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: -2.0000007
       objectReference: {fileID: 0}
-    - target: {fileID: 5105689131370203290, guid: ed81ef19f144a344593361f8ba25d0ed,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5799968564689204228, guid: ed81ef19f144a344593361f8ba25d0ed,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8128572097534128663, guid: ed81ef19f144a344593361f8ba25d0ed,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9200530941909072586, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -239,15 +211,45 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d939736c8f8f9df4ebbc6fdd11be5357, type: 2}
-    - target: {fileID: 2351188322162587029, guid: ed81ef19f144a344593361f8ba25d0ed,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 0.48315525
-      objectReference: {fileID: 0}
     - target: {fileID: 2685309137813781815, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: taggedToKill
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603468764780061024, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547962659223658304, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697379418954265299, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5105689131370203290, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799968564689204228, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128572097534128663, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351188322162587029, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.48315525
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed81ef19f144a344593361f8ba25d0ed, type: 3}

@@ -5,8 +5,10 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
 	public float movementSpeed, rotateSpeed;
+	public GameObject itemToDrop;
     public Transform player;
     private Transform[] myMovingParts;
+	private bool hasDroppedItem = false;
 	// Start is called before the first frame update
 	void Start()
     {
@@ -31,5 +33,14 @@ public class EnemyScript : MonoBehaviour
                 myMovingPart.GetComponent<Rigidbody>().AddForce(movement * movementSpeed, ForceMode.Impulse);
             }
         }
+		else
+		{
+			if(!hasDroppedItem)
+			{
+				Instantiate(itemToDrop, new Vector3(myMovingParts[0].position.x, 5, myMovingParts[0].position.z), Quaternion.identity);
+				Destroy(myMovingParts[1].Find("Sword Long").gameObject);
+				hasDroppedItem = true;
+			}
+		}
     }
 }
