@@ -36,12 +36,12 @@ PrefabInstance:
     - target: {fileID: 9200530942805780012, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: m_Name
-      value: Player
+      value: PlayerPrefab
       objectReference: {fileID: 0}
     - target: {fileID: 9200530942805780012, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: MainPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 9200530942805780013, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
@@ -101,12 +101,12 @@ PrefabInstance:
     - target: {fileID: 9200530942710491010, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 9200530943071482045, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 9200530941909072582, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
@@ -202,6 +202,21 @@ PrefabInstance:
         type: 3}
       propertyPath: enemyHealth
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242707015266488157, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242707015266488157, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242707015266488157, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed81ef19f144a344593361f8ba25d0ed, type: 3}

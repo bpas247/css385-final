@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -25,8 +26,15 @@ public class PlayerScript : MonoBehaviour
 		}
 	}
 
-	// Update is called once per frame
-	void Update()
+    IEnumerator ExitToMainMenu()
+    {
+        yield return new WaitForSeconds(3);
+        print(Time.time);
+        SceneManager.LoadScene(0);
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         if(GetComponent<AttributesScript>().GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0)
         {
@@ -37,6 +45,10 @@ public class PlayerScript : MonoBehaviour
 
             RotateEffect(KeyCode.LeftArrow, -Vector3.up);
             RotateEffect(KeyCode.RightArrow, Vector3.up);
+        }
+        else
+        {
+            StartCoroutine(ExitToMainMenu());
         }
     }
 }

@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class NavigateToNextSceneScript : MonoBehaviour
 {
 	public Transform player;
+    public GameObject objectiveManager;
+    private EnemiesRemainingScript eRS;
     // Start is called before the first frame update
     void Start()
     {
-        
+        eRS = objectiveManager.GetComponent<EnemiesRemainingScript>();
     }
 
     // Update is called once per frame
@@ -18,9 +20,26 @@ public class NavigateToNextSceneScript : MonoBehaviour
         
     }
 
-	void OnCollisionEnter(Collision collision)
+    bool IsPlayerEntity(Transform tester)
+    {
+        bool returns = false;
+
+        while (tester != null)
+        {
+            if (tester.CompareTag("MainPlayer"))
+            {
+                returns = true;
+                break;
+            }
+            tester = tester.parent;
+        }
+        return returns;
+    }
+
+
+    void OnCollisionEnter(Collision collision)
 	{
-		if(collision.gameObject.CompareTag("Player"))
+		if(IsPlayerEntity(collision.transform) && eRS.enemiesRemaining <= 0)
 		{
 			SceneManager.LoadScene(2);
 		}

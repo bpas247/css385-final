@@ -792,6 +792,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1270929899444214668, guid: 11a98ea2bc9f61d48b68624ddfd15f66,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainPlayer
+      objectReference: {fileID: 0}
     - target: {fileID: 1270929899444214669, guid: 11a98ea2bc9f61d48b68624ddfd15f66,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -952,6 +957,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3756493017505957255, guid: c906e3b3f80b16b4582b1f0a78ac26e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}

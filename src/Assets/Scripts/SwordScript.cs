@@ -20,9 +20,9 @@ public class SwordScript : MonoBehaviour
 	{
 		bool returns = false;
 
-		while(tester.parent != null)
+		while(tester != null)
 		{
-			if(tester.CompareTag(taggedToKill))
+            if (tester.CompareTag(taggedToKill))
 			{
 				returns = true;
 				break;
@@ -37,7 +37,6 @@ public class SwordScript : MonoBehaviour
         AttributesScript myAttr = transform.GetComponentInParent<AttributesScript>();
         if (myAttr.GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0)
 		{
-
             if(isEntityToKill(collision.transform))
             {
                 AttributesScript attr = collision.transform.GetComponentInParent<AttributesScript>();
