@@ -48,8 +48,10 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     // Update is called once per frame
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(empty == false)
+        Debug.Log("Entering Tooltip");
+        if (empty == false)
         {
+            
             tooltipText = "Attack: " + weaponDamage + "\nSpeed: " + weaponSpeed + "\nRange: " + weaponRange;
             currentTooltipText = tooltipText;
         }

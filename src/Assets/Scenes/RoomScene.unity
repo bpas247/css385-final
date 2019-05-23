@@ -5145,6 +5145,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 43ce1333640909546895d8ccb1b70cc1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e6d935ac5b6b8c43a7c623bec3f9d0d, type: 3}
+--- !u!1 &1533913836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7242235671938274331, guid: 277cb92baad48ac48917e37e138955ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 1955027944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1537059857 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 212368ab19d8225429a208adc2442249,
@@ -5974,6 +5980,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7242235671665783855, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 2078227142}
+    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: slotHolder
+      value: 
+      objectReference: {fileID: 1533913836}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277cb92baad48ac48917e37e138955ee, type: 3}
 --- !u!4 &1956462147 stripped
@@ -6463,6 +6484,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 79a4364fb85fe924a9ae2ad673bebdcf,
     type: 3}
   m_PrefabInstance: {fileID: 1149538004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2078227142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7242235671665783852, guid: 277cb92baad48ac48917e37e138955ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 1955027944}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2110274313 stripped
 Transform:
