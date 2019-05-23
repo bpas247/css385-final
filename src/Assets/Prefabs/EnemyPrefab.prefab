@@ -104,12 +104,12 @@ PrefabInstance:
     - target: {fileID: 9200530942710491010, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 9200530943071482045, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 9200530941909072582, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
@@ -214,7 +214,7 @@ PrefabInstance:
     - target: {fileID: 2685309137813781815, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: taggedToKill
-      value: Player
+      value: MainPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 1603468764780061024, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}

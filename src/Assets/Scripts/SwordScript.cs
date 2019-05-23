@@ -16,13 +16,29 @@ public class SwordScript : MonoBehaviour
         
     }
 
+	bool isEntityToKill(Transform tester)
+	{
+		bool returns = false;
+
+		while(tester.parent != null)
+		{
+			if(tester.CompareTag(taggedToKill))
+			{
+				returns = true;
+				break;
+			}
+			tester = tester.parent;
+		}
+		return returns;
+	}
+
 	private void OnCollisionEnter(Collision collision)
 	{
         AttributesScript myAttr = transform.GetComponentInParent<AttributesScript>();
         if (myAttr.GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0)
 		{
 
-            if(collision.gameObject.CompareTag(taggedToKill))
+            if(isEntityToKill(collision.transform))
             {
                 AttributesScript attr = collision.transform.GetComponentInParent<AttributesScript>();
                 attr.Decrease(AttributesScript.ATTRIBUTES.HEALTH, 1);
