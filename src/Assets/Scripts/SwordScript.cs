@@ -37,7 +37,7 @@ public class SwordScript : MonoBehaviour
         AttributesScript myAttr = transform.GetComponentInParent<AttributesScript>();
         if (myAttr.GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0)
 		{
-            if(isEntityToKill(collision.transform))
+            if(!collision.gameObject.CompareTag("Weapon") && isEntityToKill(collision.transform))
             {
                 AttributesScript attr = collision.transform.GetComponentInParent<AttributesScript>();
                 attr.Decrease(AttributesScript.ATTRIBUTES.HEALTH, 1);
