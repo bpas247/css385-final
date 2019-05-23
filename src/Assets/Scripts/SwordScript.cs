@@ -46,7 +46,7 @@ public class SwordScript : MonoBehaviour
                     collision.gameObject.GetComponent<Rigidbody>().AddForce(-collision.GetContact(0).normal * 400, ForceMode.Impulse);
             }
 
-            if(gameObject.tag.Equals("Player") && collision.gameObject.CompareTag("Weapon"))
+            if(gameObject.tag.Equals("MainPlayer") && collision.gameObject.CompareTag("Weapon"))
             {
                 collision.gameObject.GetComponent<Rigidbody>().AddForce(-collision.GetContact(0).normal * 500, ForceMode.Impulse);
             }
