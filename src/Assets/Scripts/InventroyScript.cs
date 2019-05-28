@@ -56,7 +56,7 @@ public class InventroyScript : MonoBehaviour
             if(slots[i].GetComponent<Slot>().empty)
             {
                 itemPickedUp.GetComponent<ItemDropScript>().pickedUp = true;
-
+              
                 slots[i].GetComponent<Slot>().item = itemPickedUp;
                 slots[i].GetComponent<Slot>().icon = icon;
                 slots[i].GetComponent<Slot>().weaponDamage = weaponDamage;
@@ -65,6 +65,7 @@ public class InventroyScript : MonoBehaviour
 
                 itemPickedUp.transform.parent = slots[i].transform;
                 itemPickedUp.SetActive(false);
+                //Destroy(itemPickedUp);
 
                 slots[i].GetComponent<Slot>().UpdateSlot();
                 slots[i].GetComponent<Slot>().empty = false;
