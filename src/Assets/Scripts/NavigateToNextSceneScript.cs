@@ -41,7 +41,7 @@ public class NavigateToNextSceneScript : MonoBehaviour
 	{
 		if(IsPlayerEntity(collision.transform) && eRS.enemiesRemaining <= 0)
 		{
-			SceneManager.LoadScene(0);
+			SceneManager.LoadScene(2);
 		}
 	}
 }

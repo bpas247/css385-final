@@ -2256,6 +2256,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1872694049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &843138198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3960014815107933938, guid: 277cb92baad48ac48917e37e138955ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 1955027944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &849378731
 GameObject:
   m_ObjectHideFlags: 0
@@ -2347,6 +2353,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849378731}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &858992118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3960014815786886465, guid: 277cb92baad48ac48917e37e138955ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 1955027944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &894675082
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,12 +3443,6 @@ Transform:
   m_Father: {fileID: 1374626777}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &1533913836 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7242235671938274331, guid: 277cb92baad48ac48917e37e138955ee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1955027944}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1554149515
 GameObject:
   m_ObjectHideFlags: 0
@@ -4174,12 +4180,12 @@ PrefabInstance:
         type: 3}
       propertyPath: inventory
       value: 
-      objectReference: {fileID: 2078227142}
+      objectReference: {fileID: 843138198}
     - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
         type: 3}
       propertyPath: slotHolder
       value: 
-      objectReference: {fileID: 1533913836}
+      objectReference: {fileID: 858992118}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277cb92baad48ac48917e37e138955ee, type: 3}
 --- !u!1 &1964713957
@@ -4546,12 +4552,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065066623}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2078227142 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7242235671665783852, guid: 277cb92baad48ac48917e37e138955ee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1955027944}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2112841401
 GameObject:
   m_ObjectHideFlags: 0
