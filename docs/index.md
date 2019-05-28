@@ -5,6 +5,7 @@
 
 - [Paper Prototype](paper-prototype.md)
 - [Digital Prototype](digital-prototype.md)
+- [Alpha](alpha.md)
 
 ## Playable Game 
 
