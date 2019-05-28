@@ -17,6 +17,9 @@ A playable demo of the game can be found [here](game/index.md)
 ## Trailer 
 ## Screenshots
 ## Source code
+
+The source code can be found [here](https://github.com/bpas247/css385-final/tree/master/src)
+
 ## Postmortem Presentation 
 ## Game Presentation 
 ## Team Reflection
