@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Totally Accurate RPG Fantasy Game</title>
-    <link rel="stylesheet" href="TemplateData/index.css">
+    <link rel="stylesheet" href="Styles/index.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
