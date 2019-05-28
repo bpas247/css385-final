@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     public GameObject item;
     public bool empty;
@@ -48,10 +48,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     // Update is called once per frame
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Entering Tooltip");
         if (empty == false)
         {
-            
             tooltipText = "Attack: " + weaponDamage + "\nSpeed: " + weaponSpeed + "\nRange: " + weaponRange;
             currentTooltipText = tooltipText;
         }
@@ -61,6 +59,28 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerExit(PointerEventData eventData)
     {
         currentTooltipText = "";
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        int tap = eventData.clickCount;
+        
+        if (tap == 2)
+        {
+
+            Vector3 position = GameObject.FindWithTag("MainPlayer").transform.GetChild(0).transform.position;
+            //Vector3 position = new Vector3(0,2,-12);
+            item.SetActive(true);
+            GameObject copy = Instantiate(item, position, Quaternion.identity);
+            copy.GetComponent<ItemDropScript>().weaponDamage = item.GetComponent<ItemDropScript>().weaponDamage;
+            copy.GetComponent<ItemDropScript>().weaponSpeed = item.GetComponent<ItemDropScript>().weaponSpeed;
+            copy.GetComponent<ItemDropScript>().weaponRange = item.GetComponent<ItemDropScript>().weaponRange;
+            empty = true;
+            Destroy(item);
+            this.GetComponent<Image>().sprite = null;
+            
+        }
+
     }
 
     private void OnGUI()
