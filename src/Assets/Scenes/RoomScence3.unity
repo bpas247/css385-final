@@ -1088,12 +1088,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1872694049}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &843138198 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3960014815107933938, guid: 277cb92baad48ac48917e37e138955ee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1955027944}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &858992118 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3960014815786886465, guid: 277cb92baad48ac48917e37e138955ee,
@@ -1540,7 +1534,7 @@ PrefabInstance:
         type: 3}
       propertyPath: inventory
       value: 
-      objectReference: {fileID: 843138198}
+      objectReference: {fileID: 1955027945}
     - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
         type: 3}
       propertyPath: slotHolder
@@ -1553,6 +1547,12 @@ PrefabInstance:
       objectReference: {fileID: 1242644720}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277cb92baad48ac48917e37e138955ee, type: 3}
+--- !u!1 &1955027945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3960014815522768246, guid: 277cb92baad48ac48917e37e138955ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 1955027944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2003233885
 GameObject:
   m_ObjectHideFlags: 0
