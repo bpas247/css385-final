@@ -136,6 +136,8 @@ MonoBehaviour:
   item: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
+  slotNum: 0
+  equipped: 0
   weaponDamage: 0
   weaponSpeed: 0
   weaponRange: 0
@@ -275,6 +277,8 @@ MonoBehaviour:
   item: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
+  slotNum: 0
+  equipped: 0
   weaponDamage: 0
   weaponSpeed: 0
   weaponRange: 0
@@ -1030,6 +1034,8 @@ MonoBehaviour:
   item: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
+  slotNum: 0
+  equipped: 0
   weaponDamage: 0
   weaponSpeed: 0
   weaponRange: 0
@@ -1169,6 +1175,8 @@ MonoBehaviour:
   item: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
+  slotNum: 0
+  equipped: 0
   weaponDamage: 0
   weaponSpeed: 0
   weaponRange: 0
@@ -1308,6 +1316,8 @@ MonoBehaviour:
   item: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
+  slotNum: 0
+  equipped: 0
   weaponDamage: 0
   weaponSpeed: 0
   weaponRange: 0
@@ -1447,6 +1457,8 @@ MonoBehaviour:
   item: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
+  slotNum: 0
+  equipped: 0
   weaponDamage: 0
   weaponSpeed: 0
   weaponRange: 0
@@ -1586,6 +1598,8 @@ MonoBehaviour:
   item: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
+  slotNum: 0
+  equipped: 0
   weaponDamage: 0
   weaponSpeed: 0
   weaponRange: 0
@@ -1725,6 +1739,8 @@ MonoBehaviour:
   item: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
+  slotNum: 0
+  equipped: 0
   weaponDamage: 0
   weaponSpeed: 0
   weaponRange: 0
