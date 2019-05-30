@@ -7,7 +7,12 @@ public class PlayerScript : MonoBehaviour
 {
 	public float movementSpeed, rotateSpeed;
 
-	private void MoveEffect(KeyCode code, Vector3 movement)
+    void Start()
+    {
+        GetComponent<AttributesScript>().MAX_HEALTH = 1000;
+    }
+
+    private void MoveEffect(KeyCode code, Vector3 movement)
 	{
 		if (Input.GetKey(code))
 		{

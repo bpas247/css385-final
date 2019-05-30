@@ -11,12 +11,14 @@ public class AttributesScript : MonoBehaviour
         DAMAGE
     }
 
+    public int MAX_HEALTH;
+
     private Dictionary<ATTRIBUTES, int> attributes;
 
     void Start()
     {
         attributes = new Dictionary<ATTRIBUTES, int>();
-        attributes.Add(ATTRIBUTES.HEALTH, 300);
+        attributes.Add(ATTRIBUTES.HEALTH, MAX_HEALTH);
     }
 
     public void Increase(ATTRIBUTES attr, int toIncrease)

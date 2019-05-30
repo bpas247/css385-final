@@ -822,6 +822,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 0.10000038
       objectReference: {fileID: 0}
+    - target: {fileID: 1852883081, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
+      propertyPath: MAX_HEALTH
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
 --- !u!1 &235828908
@@ -1263,6 +1267,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 0.10000038
       objectReference: {fileID: 0}
+    - target: {fileID: 1852883081, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
+      propertyPath: MAX_HEALTH
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
 --- !u!1001 &339906766
@@ -1440,6 +1448,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0.10000038
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852883081, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
+      propertyPath: MAX_HEALTH
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
@@ -2413,6 +2425,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0.10000038
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852883081, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
+      propertyPath: MAX_HEALTH
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
@@ -5635,6 +5651,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 846904371, guid: 11a98ea2bc9f61d48b68624ddfd15f66, type: 3}
+      propertyPath: MAX_HEALTH
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11a98ea2bc9f61d48b68624ddfd15f66, type: 3}

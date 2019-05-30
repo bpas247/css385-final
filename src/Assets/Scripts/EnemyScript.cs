@@ -13,6 +13,7 @@ public class EnemyScript : MonoBehaviour
 	void Start()
     {
         myMovingParts = new[]{ transform.Find("Body"), transform.Find("Body").Find("Right Arm")};
+        GetComponent<AttributesScript>().MAX_HEALTH = 500;
 
     }
 
