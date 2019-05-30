@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class NavigateToNextSceneScript : MonoBehaviour
 {
-	public Transform player;
     public GameObject objectiveManager;
-    private EnemiesRemainingScript eRS;
+    private ObjectivesScript eRS;
+	public int nextLevel;
     // Start is called before the first frame update
     void Start()
     {
-        eRS = objectiveManager.GetComponent<EnemiesRemainingScript>();
+        eRS = objectiveManager.GetComponent<ObjectivesScript>();
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class NavigateToNextSceneScript : MonoBehaviour
 	{
 		if(IsPlayerEntity(collision.transform) && eRS.enemiesRemaining <= 0)
 		{
-			SceneManager.LoadScene(2);
+			SceneManager.LoadScene(nextLevel);
 		}
 	}
 }

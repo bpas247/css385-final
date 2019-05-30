@@ -3950,8 +3950,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee644e4cad8f1d4288daef2065bd97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 747782099}
   objectiveManager: {fileID: 270243531}
+  nextLevel: 2
 --- !u!65 &1122042918
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6058,21 +6058,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3969194978577626650, guid: 277cb92baad48ac48917e37e138955ee,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3969194978577626650, guid: 277cb92baad48ac48917e37e138955ee,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.7949582
-      objectReference: {fileID: 0}
-    - target: {fileID: 3969194978577626650, guid: 277cb92baad48ac48917e37e138955ee,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.3176471
-      objectReference: {fileID: 0}
     - target: {fileID: 1756776737332139704, guid: 277cb92baad48ac48917e37e138955ee,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -6102,6 +6087,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -54.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7940258169093926796, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: nextRoom
+      value: 
+      objectReference: {fileID: 1122042915}
+    - target: {fileID: 3969194978577626650, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3969194978577626650, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.7949582
+      objectReference: {fileID: 0}
+    - target: {fileID: 3969194978577626650, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.3176471
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277cb92baad48ac48917e37e138955ee, type: 3}
