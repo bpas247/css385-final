@@ -15,6 +15,6 @@ public class HealthbarScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Image>().fillAmount = ( player.GetComponent<AttributesScript>().GetValue(AttributesScript.ATTRIBUTES.HEALTH) / 3.0f);
+        GetComponent<Image>().fillAmount = ( player.GetComponent<AttributesScript>().GetValue(AttributesScript.ATTRIBUTES.HEALTH) / (float)(player.GetComponent<AttributesScript>().MAX_HEALTH));
     }
 }
