@@ -9,6 +9,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     public GameObject item;
     public bool empty;
     public Texture2D icon;
+    public int slotNum;
+    public bool equipped;
 
     public int weaponDamage = 0;
     public double weaponSpeed = 0;
@@ -63,9 +65,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        int tap = eventData.clickCount;
-        
-        if (tap == 2)
+
+        if (eventData.button == PointerEventData.InputButton.Right && empty == false && equipped == false)
         {
 
             Vector3 position = GameObject.FindWithTag("MainPlayer").transform.GetChild(0).transform.position;
@@ -78,7 +79,12 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
             empty = true;
             Destroy(item);
             this.GetComponent<Image>().sprite = null;
-            
+            this.GetComponent<Image>().color = new Color32(255, 204, 81, 255);
+
+        }
+        else if(eventData.button == PointerEventData.InputButton.Left && empty == false && equipped == false)
+        {
+            GameObject.Find("GameManager").GetComponent<InventroyScript>().ItemEquipped(slotNum);
         }
 
     }
