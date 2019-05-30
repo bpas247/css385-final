@@ -429,6 +429,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 0.10000038
       objectReference: {fileID: 0}
+    - target: {fileID: 1852883081, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
+      propertyPath: MAX_HEALTH
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
 --- !u!1001 &331823464
@@ -532,6 +536,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 0.10000038
       objectReference: {fileID: 0}
+    - target: {fileID: 1852883081, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
+      propertyPath: MAX_HEALTH
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
 --- !u!1001 &378328935
@@ -634,6 +642,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0.10000038
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852883081, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
+      propertyPath: MAX_HEALTH
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
@@ -972,6 +984,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 0.10000038
       objectReference: {fileID: 0}
+    - target: {fileID: 1852883081, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
+      propertyPath: MAX_HEALTH
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906e3b3f80b16b4582b1f0a78ac26e3, type: 3}
 --- !u!1 &815994503
@@ -1194,6 +1210,7 @@ GameObject:
   - component: {fileID: 1242644724}
   - component: {fileID: 1242644723}
   - component: {fileID: 1242644722}
+  - component: {fileID: 1242644725}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -1273,6 +1290,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242644720}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1242644725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242644720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ee644e4cad8f1d4288daef2065bd97c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectiveManager: {fileID: 2103122678}
+  nextLevel: 0
 --- !u!1 &1374626776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,6 +1458,10 @@ PrefabInstance:
       propertyPath: taggedToKill
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 846904371, guid: 11a98ea2bc9f61d48b68624ddfd15f66, type: 3}
+      propertyPath: MAX_HEALTH
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11a98ea2bc9f61d48b68624ddfd15f66, type: 3}
 --- !u!1001 &1955027944
@@ -1511,6 +1546,11 @@ PrefabInstance:
       propertyPath: slotHolder
       value: 
       objectReference: {fileID: 858992118}
+    - target: {fileID: 7940258169093926796, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: nextRoom
+      value: 
+      objectReference: {fileID: 1242644720}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277cb92baad48ac48917e37e138955ee, type: 3}
 --- !u!1 &2003233885
@@ -1604,3 +1644,9 @@ Transform:
   m_Father: {fileID: 1374626777}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &2103122678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5291728274396582957, guid: 277cb92baad48ac48917e37e138955ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 1955027944}
+  m_PrefabAsset: {fileID: 0}
