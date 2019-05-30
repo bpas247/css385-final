@@ -5,9 +5,11 @@ using UnityEngine;
 public class SwordScript : MonoBehaviour
 {
 	public string taggedToKill;
+    ItemDropScript equippedWeapon;
     // Start is called before the first frame update
     void Start()
     {
+        equippedWeapon = new ItemDropScript();
     }
 
     // Update is called once per frame
@@ -40,7 +42,7 @@ public class SwordScript : MonoBehaviour
             if(!collision.gameObject.CompareTag("Weapon") && isEntityToKill(collision.transform))
             {
                 AttributesScript attr = collision.transform.GetComponentInParent<AttributesScript>();
-                attr.Decrease(AttributesScript.ATTRIBUTES.HEALTH, 1);
+                attr.Decrease(AttributesScript.ATTRIBUTES.HEALTH, equippedWeapon.weaponDamage);
 
                 if (attr.GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0)
                     collision.gameObject.GetComponent<Rigidbody>().AddForce(-collision.GetContact(0).normal * 400, ForceMode.Impulse);
@@ -52,4 +54,11 @@ public class SwordScript : MonoBehaviour
             }
         }
 	}
+
+    public void equipItem(GameObject item)
+    {
+        equippedWeapon = item.GetComponent<ItemDropScript>();
+        GameObject.FindWithTag("MainPlayer").GetComponent<PlayerScript>().rotateSpeed = 500 * (float)(equippedWeapon.weaponSpeed);
+
+    }
 }

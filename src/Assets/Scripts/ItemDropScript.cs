@@ -20,6 +20,13 @@ public class ItemDropScript : MonoBehaviour
 
 
     // Start is called before the first frame update
+    public ItemDropScript()
+    {
+        weaponDamage = 100;
+        weaponSpeed = 1.0;
+        weaponRange = 1.0;
+    }
+
     void Start()
     {
         guiStyleFore = new GUIStyle();
