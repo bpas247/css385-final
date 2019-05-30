@@ -4318,6 +4318,11 @@ PrefabInstance:
       propertyPath: slotHolder
       value: 
       objectReference: {fileID: 858992118}
+    - target: {fileID: 7940258169093926796, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: nextRoom
+      value: 
+      objectReference: {fileID: 124646898}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277cb92baad48ac48917e37e138955ee, type: 3}
 --- !u!1 &1955027945 stripped
