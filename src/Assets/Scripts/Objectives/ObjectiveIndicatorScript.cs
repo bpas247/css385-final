@@ -16,7 +16,7 @@ public class ObjectiveIndicatorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		GameObject curObjective = GetComponentInParent<ObjectivesScript>().currentObjective;
+		GameObject curObjective = GetComponentInParent<ObjectivesSystemScript>().currentObjective;
 
 		if(curObjective)
 		{
