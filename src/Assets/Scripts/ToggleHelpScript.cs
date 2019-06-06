@@ -20,5 +20,7 @@ public class ToggleHelpScript : MonoBehaviour
 			show = !show;
 		}
 		canvas.enabled = show;
+
+		Time.timeScale = show ? 0 : 1;
     }
 }

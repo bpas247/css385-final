@@ -8,7 +8,9 @@ public class AttributesScript : MonoBehaviour
     {
         HEALTH,
         XP,
-        DAMAGE
+        DEFENSE,
+        SPEED,
+        LEVEL
     }
 
     public int MAX_HEALTH;
@@ -19,6 +21,10 @@ public class AttributesScript : MonoBehaviour
     {
         attributes = new Dictionary<ATTRIBUTES, int>();
         attributes.Add(ATTRIBUTES.HEALTH, MAX_HEALTH);
+        attributes.Add(ATTRIBUTES.XP, 0);
+        attributes.Add(ATTRIBUTES.SPEED, 0);
+        attributes.Add(ATTRIBUTES.DEFENSE, 0);
+        attributes.Add(ATTRIBUTES.LEVEL, 1);
     }
 
     public void Increase(ATTRIBUTES attr, int toIncrease)
@@ -36,6 +42,11 @@ public class AttributesScript : MonoBehaviour
     public int GetValue(ATTRIBUTES attr)
     {
         return attributes[attr];
+    }
+
+    public void SetHealthMax()
+    {
+        attributes[ATTRIBUTES.HEALTH] = MAX_HEALTH;
     }
 
     private void Update()
