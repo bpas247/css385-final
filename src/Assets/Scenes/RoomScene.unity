@@ -5528,10 +5528,60 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 3960014814819736378, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Speed: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3960014815991799376, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: m_Text
+      value: 'HP: 0'
+      objectReference: {fileID: 0}
     - target: {fileID: 3960014815522768246, guid: 277cb92baad48ac48917e37e138955ee,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 1206746909}
+    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: slotHolder
+      value: 
+      objectReference: {fileID: 1853722058}
+    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: HPText
+      value: 
+      objectReference: {fileID: 1104160194}
+    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: DefenseText
+      value: 
+      objectReference: {fileID: 1797203149}
+    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: SpeedText
+      value: 
+      objectReference: {fileID: 132401389}
+    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: LevelText
+      value: 
+      objectReference: {fileID: 948669656}
+    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: SkillPointsText
+      value: 
+      objectReference: {fileID: 437271061}
+    - target: {fileID: 3960014814706481266, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Defense: 0'
       objectReference: {fileID: 0}
     - target: {fileID: 8847358322858530772, guid: 277cb92baad48ac48917e37e138955ee,
         type: 3}
@@ -5593,41 +5643,6 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
-        type: 3}
-      propertyPath: inventory
-      value: 
-      objectReference: {fileID: 1206746909}
-    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
-        type: 3}
-      propertyPath: slotHolder
-      value: 
-      objectReference: {fileID: 1853722058}
-    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
-        type: 3}
-      propertyPath: HPText
-      value: 
-      objectReference: {fileID: 1104160194}
-    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
-        type: 3}
-      propertyPath: DefenseText
-      value: 
-      objectReference: {fileID: 1797203149}
-    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
-        type: 3}
-      propertyPath: SpeedText
-      value: 
-      objectReference: {fileID: 132401389}
-    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
-        type: 3}
-      propertyPath: LevelText
-      value: 
-      objectReference: {fileID: 948669656}
-    - target: {fileID: 8645700636729593065, guid: 277cb92baad48ac48917e37e138955ee,
-        type: 3}
-      propertyPath: SkillPointsText
-      value: 
-      objectReference: {fileID: 437271061}
     - target: {fileID: 7940258169093926796, guid: 277cb92baad48ac48917e37e138955ee,
         type: 3}
       propertyPath: nextRoom
@@ -6218,6 +6233,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8130932722277508751, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5750337340700015758, guid: 277cb92baad48ac48917e37e138955ee,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -6238,6 +6258,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8377393190189217995, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2409334373697239358, guid: 277cb92baad48ac48917e37e138955ee,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -6257,6 +6282,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008810075408090205, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9027920829916066868, guid: 277cb92baad48ac48917e37e138955ee,
         type: 3}

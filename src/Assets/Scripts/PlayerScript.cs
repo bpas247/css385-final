@@ -10,13 +10,15 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         GetComponent<AttributesScript>().MAX_HEALTH = 1000;
+        GetComponent<AttributesScript>().Increase(AttributesScript.ATTRIBUTES.DEFENSE, 10);
     }
 
     private void MoveEffect(KeyCode code, Vector3 movement)
 	{
 		if (Input.GetKey(code))
 		{
-			transform.Find("Pelvis").GetComponent<Rigidbody>().AddForce(movement * movementSpeed, ForceMode.Impulse);
+			transform.Find("Pelvis").GetComponent<Rigidbody>().AddForce(movement * (movementSpeed + GetComponent<AttributesScript>().GetValue(AttributesScript.ATTRIBUTES.SPEED))
+                                                                                                                                            , ForceMode.Impulse);
 			transform.Find("Body").GetComponent<Rigidbody>().AddForce(movement * movementSpeed, ForceMode.Impulse);
 
 		}

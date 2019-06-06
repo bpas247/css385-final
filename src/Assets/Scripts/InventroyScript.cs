@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class InventroyScript : MonoBehaviour
 {
     public GameObject inventory;
+    GameObject player;
 
     private int allSlots;
     private GameObject[] slots;
@@ -47,15 +48,17 @@ public class InventroyScript : MonoBehaviour
         }
 
         skillPoints = 0;
-        HP = 1;
-        Defense = 1;
-        Speed = 1;
+        HP = 0;
+        Defense = 0;
+        Speed = 0;
         Level = 1;
         HPText = inventory.transform.Find("XPSystem/HP").GetComponent<Text>();
         DefenseText = inventory.transform.Find("XPSystem/Defense").GetComponent<Text>();
         SpeedText = inventory.transform.Find("XPSystem/Speed").GetComponent<Text>();
         LevelText = inventory.transform.Find("XPSystem/Level").GetComponent<Text>();
         SkillPointsText = inventory.transform.Find("XPSystem/Skill Points").GetComponent<Text>();
+
+        player = GameObject.FindGameObjectWithTag("MainPlayer");
     }
 
     // Update is called once per frame
@@ -151,6 +154,7 @@ public class InventroyScript : MonoBehaviour
         HP++;
         HPText.text = "HP: " + HP;
         SkillPointsText.text = "Skill Points: " + skillPoints;
+        player.GetComponent<AttributesScript>().MAX_HEALTH += 100;
     }
 
     public void LevelDefense()
@@ -159,6 +163,7 @@ public class InventroyScript : MonoBehaviour
         Defense++;
         DefenseText.text = "Defense: " + Defense;
         SkillPointsText.text = "Skill Points: " + skillPoints;
+        player.GetComponent<AttributesScript>().Increase(AttributesScript.ATTRIBUTES.DEFENSE, 1);
     }
 
     public void LevelSpeed()
@@ -167,6 +172,7 @@ public class InventroyScript : MonoBehaviour
         Speed++;
         SpeedText.text = "Speed: " + Speed;
         SkillPointsText.text = "Skill Points: " + skillPoints;
+        player.GetComponent<AttributesScript>().Increase(AttributesScript.ATTRIBUTES.SPEED, 1);
     }
 
     public void UpdateLevel()

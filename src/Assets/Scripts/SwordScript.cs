@@ -42,7 +42,7 @@ public class SwordScript : MonoBehaviour
             if(!collision.gameObject.CompareTag("Weapon") && isEntityToKill(collision.transform))
             {
                 AttributesScript attr = collision.transform.GetComponentInParent<AttributesScript>();
-                attr.Decrease(AttributesScript.ATTRIBUTES.HEALTH, equippedWeapon.weaponDamage);
+                attr.Decrease(AttributesScript.ATTRIBUTES.HEALTH, (equippedWeapon.weaponDamage - (int)(equippedWeapon.weaponDamage * CalculateDefense(attr.GetValue(AttributesScript.ATTRIBUTES.DEFENSE)))));
 
                 if (attr.GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0)
                 {
@@ -71,5 +71,19 @@ public class SwordScript : MonoBehaviour
         equippedWeapon = item.GetComponent<ItemDropScript>();
         GameObject.FindWithTag("MainPlayer").GetComponent<PlayerScript>().rotateSpeed = 500 * (float)(equippedWeapon.weaponSpeed);
 
+    }
+
+    private double CalculateDefense(int defenseRating)
+    {
+        double percent = 1.0;
+        double def = 0.0;
+        while(defenseRating > 0)
+        {
+            def += percent / 10;
+            percent -= percent / 10;
+            defenseRating--;
+        }
+
+        return def;
     }
 }
