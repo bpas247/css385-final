@@ -10,7 +10,7 @@ public class ItemDropScript : MonoBehaviour
     public double weaponSpeed = 0;
     public double weaponRange = 0;
 
-    public Texture2D icon;
+    public Sprite icon;
     public bool pickedUp;
     private bool hovering;
 
