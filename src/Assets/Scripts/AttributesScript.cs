@@ -42,6 +42,11 @@ public class AttributesScript : MonoBehaviour
         return attributes[attr];
     }
 
+    public void SetHealthMax()
+    {
+        attributes[ATTRIBUTES.HEALTH] = MAX_HEALTH;
+    }
+
     private void Update()
     {
         if(attributes.ContainsKey(ATTRIBUTES.HEALTH) && attributes[ATTRIBUTES.HEALTH] <= 0)

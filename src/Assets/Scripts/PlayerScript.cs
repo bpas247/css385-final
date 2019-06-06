@@ -10,7 +10,6 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         GetComponent<AttributesScript>().MAX_HEALTH = 1000;
-        GetComponent<AttributesScript>().Increase(AttributesScript.ATTRIBUTES.DEFENSE, 10);
     }
 
     private void MoveEffect(KeyCode code, Vector3 movement)

@@ -6,6 +6,7 @@ public class EnemyScript : MonoBehaviour
 {
 	public float movementSpeed, rotateSpeed;
 	public GameObject itemToDrop;
+    public GameObject healthOrbDrop;
     public Transform player;
 
     private Transform[] myMovingParts;
@@ -43,6 +44,14 @@ public class EnemyScript : MonoBehaviour
 			{
 				Instantiate(itemToDrop, new Vector3(myMovingParts[0].position.x, 5, myMovingParts[0].position.z), Quaternion.identity);
 				Destroy(myMovingParts[1].Find("Sword Long").gameObject);
+
+                int dropHealth = Random.Range(0, 101);
+
+                if(dropHealth >= 50)
+                {
+                    Instantiate(healthOrbDrop, new Vector3(myMovingParts[0].position.x, 3, myMovingParts[0].position.z), Quaternion.identity);
+                }
+
 				hasDroppedItem = true;
 			}
 		}

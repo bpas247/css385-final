@@ -4098,12 +4098,12 @@ PrefabInstance:
     - target: {fileID: 1270929900251237661, guid: 11a98ea2bc9f61d48b68624ddfd15f66,
         type: 3}
       propertyPath: m_TagString
-      value: Finish
+      value: MainPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 1270929899348662818, guid: 11a98ea2bc9f61d48b68624ddfd15f66,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MainPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 846904370, guid: 11a98ea2bc9f61d48b68624ddfd15f66, type: 3}
       propertyPath: movementSpeed
