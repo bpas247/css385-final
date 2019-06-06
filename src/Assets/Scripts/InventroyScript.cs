@@ -10,8 +10,21 @@ public class InventroyScript : MonoBehaviour
     private int allSlots;
     private GameObject[] slots;
     private int currentEquip;
-
     public GameObject slotHolder;
+
+    public int skillPoints;
+    public int HP;
+    public int Defense;
+    public int Speed;
+    public int Level;
+
+    Text HPText;
+    Text DefenseText;
+    Text SpeedText;
+    Text LevelText;
+    Text SkillPointsText;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +45,17 @@ public class InventroyScript : MonoBehaviour
             }
 
         }
+
+        skillPoints = 0;
+        HP = 1;
+        Defense = 1;
+        Speed = 1;
+        Level = 1;
+        HPText = inventory.transform.Find("XPSystem/HP").GetComponent<Text>();
+        DefenseText = inventory.transform.Find("XPSystem/Defense").GetComponent<Text>();
+        SpeedText = inventory.transform.Find("XPSystem/Speed").GetComponent<Text>();
+        LevelText = inventory.transform.Find("XPSystem/Level").GetComponent<Text>();
+        SkillPointsText = inventory.transform.Find("XPSystem/Skill Points").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -40,6 +64,19 @@ public class InventroyScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventory.SetActive(!inventory.activeSelf);
+        }
+
+        if(skillPoints > 0)
+        {
+            inventory.transform.Find("XPSystem/HPButton").gameObject.SetActive(true);
+            inventory.transform.Find("XPSystem/DefenseButton").gameObject.SetActive(true);
+            inventory.transform.Find("XPSystem/SpeedButton").gameObject.SetActive(true);
+        }
+        else
+        {
+            inventory.transform.Find("XPSystem/HPButton").gameObject.SetActive(false);
+            inventory.transform.Find("XPSystem/DefenseButton").gameObject.SetActive(false);
+            inventory.transform.Find("XPSystem/SpeedButton").gameObject.SetActive(false);
         }
     }
 
@@ -106,5 +143,41 @@ public class InventroyScript : MonoBehaviour
         player.transform.Find("Body").gameObject.transform.Find("Right Arm").gameObject.transform.Find("Sword Long").gameObject.transform.localScale = new Vector3(500, 500, 100 * (float)item.weaponRange);
 
 
+    }
+
+    public void LevelHP()
+    {
+        skillPoints--;
+        HP++;
+        HPText.text = "HP: " + HP;
+        SkillPointsText.text = "Skill Points: " + skillPoints;
+    }
+
+    public void LevelDefense()
+    {
+        skillPoints--;
+        Defense++;
+        DefenseText.text = "Defense: " + Defense;
+        SkillPointsText.text = "Skill Points: " + skillPoints;
+    }
+
+    public void LevelSpeed()
+    {
+        skillPoints--;
+        Speed++;
+        SpeedText.text = "Speed: " + Speed;
+        SkillPointsText.text = "Skill Points: " + skillPoints;
+    }
+
+    public void UpdateLevel()
+    {
+        Level++;
+        LevelText.text = "Level: " + Level;
+    }
+
+    public void UpdateSkillPoints()
+    {
+        skillPoints++;
+        SkillPointsText.text = "Skill Points: " + skillPoints;
     }
 }

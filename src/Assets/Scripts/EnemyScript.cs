@@ -7,8 +7,11 @@ public class EnemyScript : MonoBehaviour
 	public float movementSpeed, rotateSpeed;
 	public GameObject itemToDrop;
     public Transform player;
+
     private Transform[] myMovingParts;
 	private bool hasDroppedItem = false;
+    public bool xpRewarded = false;
+
 	// Start is called before the first frame update
 	void Start()
     {

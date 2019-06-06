@@ -45,7 +45,18 @@ public class SwordScript : MonoBehaviour
                 attr.Decrease(AttributesScript.ATTRIBUTES.HEALTH, equippedWeapon.weaponDamage);
 
                 if (attr.GetValue(AttributesScript.ATTRIBUTES.HEALTH) > 0)
+                {
                     collision.gameObject.GetComponent<Rigidbody>().AddForce(-collision.GetContact(0).normal * 400, ForceMode.Impulse);
+                }
+                else
+                {
+                    if(collision.transform.GetComponentInParent<EnemyScript>().xpRewarded == false)
+                    {
+                        GameObject.FindWithTag("MainPlayer").GetComponent<AttributesScript>().Increase(AttributesScript.ATTRIBUTES.XP, 50);
+                        collision.transform.GetComponentInParent<EnemyScript>().xpRewarded = true;
+                    }
+                    
+                }   
             }
 
             if(gameObject.tag.Equals("MainPlayer") && collision.gameObject.CompareTag("Weapon"))

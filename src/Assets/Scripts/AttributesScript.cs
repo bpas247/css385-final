@@ -19,6 +19,7 @@ public class AttributesScript : MonoBehaviour
     {
         attributes = new Dictionary<ATTRIBUTES, int>();
         attributes.Add(ATTRIBUTES.HEALTH, MAX_HEALTH);
+        attributes.Add(ATTRIBUTES.XP, 0);
     }
 
     public void Increase(ATTRIBUTES attr, int toIncrease)
