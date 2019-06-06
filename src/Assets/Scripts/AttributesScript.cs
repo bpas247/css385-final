@@ -9,7 +9,8 @@ public class AttributesScript : MonoBehaviour
         HEALTH,
         XP,
         DEFENSE,
-        SPEED
+        SPEED,
+        LEVEL
     }
 
     public int MAX_HEALTH;
@@ -23,6 +24,7 @@ public class AttributesScript : MonoBehaviour
         attributes.Add(ATTRIBUTES.XP, 0);
         attributes.Add(ATTRIBUTES.SPEED, 0);
         attributes.Add(ATTRIBUTES.DEFENSE, 0);
+        attributes.Add(ATTRIBUTES.LEVEL, 1);
     }
 
     public void Increase(ATTRIBUTES attr, int toIncrease)

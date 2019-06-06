@@ -47,18 +47,25 @@ public class InventroyScript : MonoBehaviour
 
         }
 
+        player = GameObject.FindGameObjectWithTag("MainPlayer");
+        AttributesScript att = player.GetComponent<AttributesScript>();
+
         skillPoints = 0;
-        HP = 0;
-        Defense = 0;
-        Speed = 0;
-        Level = 1;
+        HP = att.MAX_HEALTH;
+        Defense = att.GetValue(AttributesScript.ATTRIBUTES.DEFENSE);
+        Speed = att.GetValue(AttributesScript.ATTRIBUTES.SPEED);
+        Level = att.GetValue(AttributesScript.ATTRIBUTES.LEVEL); ;
         HPText = inventory.transform.Find("XPSystem/HP").GetComponent<Text>();
         DefenseText = inventory.transform.Find("XPSystem/Defense").GetComponent<Text>();
         SpeedText = inventory.transform.Find("XPSystem/Speed").GetComponent<Text>();
         LevelText = inventory.transform.Find("XPSystem/Level").GetComponent<Text>();
         SkillPointsText = inventory.transform.Find("XPSystem/Skill Points").GetComponent<Text>();
 
-        player = GameObject.FindGameObjectWithTag("MainPlayer");
+        HPText.text = "HP: " + HP;
+        DefenseText.text = "Defense: " + Defense;
+        SpeedText.text = "Speed: " + Speed;
+        LevelText.text = "Level: " + Level;
+
     }
 
     // Update is called once per frame
@@ -151,7 +158,7 @@ public class InventroyScript : MonoBehaviour
     public void LevelHP()
     {
         skillPoints--;
-        HP++;
+        HP += 100;
         HPText.text = "HP: " + HP;
         SkillPointsText.text = "Skill Points: " + skillPoints;
         player.GetComponent<AttributesScript>().MAX_HEALTH += 100;
@@ -179,6 +186,7 @@ public class InventroyScript : MonoBehaviour
     {
         Level++;
         LevelText.text = "Level: " + Level;
+        player.GetComponent<AttributesScript>().Increase(AttributesScript.ATTRIBUTES.LEVEL, 1);
     }
 
     public void UpdateSkillPoints()
