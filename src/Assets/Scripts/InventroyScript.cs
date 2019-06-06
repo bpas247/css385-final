@@ -94,7 +94,7 @@ public class InventroyScript : MonoBehaviour
         }
     }
 
-    void AddItem(GameObject itemPickedUp, int weaponDamage, double weaponSpeed, double weaponRange, Texture2D icon)
+    void AddItem(GameObject itemPickedUp, int weaponDamage, double weaponSpeed, double weaponRange, Sprite icon)
     {
         for (int i = 0; i < allSlots; i++)
         {
