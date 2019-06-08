@@ -9,8 +9,7 @@ public class HealthOrb : MonoBehaviour
     {
         if(collision.gameObject.tag.Equals("MainPlayer"))
         {
-            GameObject player = GameObject.FindWithTag("MainPlayer");
-            AttributesScript att = player.GetComponent<AttributesScript>();
+            AttributesScript att = collision.gameObject.GetComponentInParent<AttributesScript>();
 
             if(att.GetValue(AttributesScript.ATTRIBUTES.HEALTH) <= (att.MAX_HEALTH - 250))
             {

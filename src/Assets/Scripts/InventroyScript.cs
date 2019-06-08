@@ -30,6 +30,7 @@ public class InventroyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GetComponentInParent<AccessPlayerScript>().player;
         currentEquip = -1;
         allSlots = 8;
         slots = new GameObject[allSlots];
@@ -54,7 +55,7 @@ public class InventroyScript : MonoBehaviour
         HP = att.MAX_HEALTH;
         Defense = att.GetValue(AttributesScript.ATTRIBUTES.DEFENSE);
         Speed = att.GetValue(AttributesScript.ATTRIBUTES.SPEED);
-        Level = att.GetValue(AttributesScript.ATTRIBUTES.LEVEL); ;
+        Level = att.GetValue(AttributesScript.ATTRIBUTES.LEVEL);
         HPText = inventory.transform.Find("XPSystem/HP").GetComponent<Text>();
         DefenseText = inventory.transform.Find("XPSystem/Defense").GetComponent<Text>();
         SpeedText = inventory.transform.Find("XPSystem/Speed").GetComponent<Text>();

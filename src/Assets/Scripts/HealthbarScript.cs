@@ -9,7 +9,7 @@ public class HealthbarScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("MainPlayer");
+        player = GetComponentInParent<AccessPlayerScript>().player;
     }
 
     // Update is called once per frame
