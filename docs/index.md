@@ -14,6 +14,46 @@ A playable demo of the game can be found [here](game/index.md)
 
 ## Playtesting Reports 
 ## Credits 
+
+### Billy
+
+#### Role
+
+Game and level designer.
+
+#### Responsibilities
+
+- Design and implement each level.
+- Integrate existing objectives system into each level.
+
+### Brady 
+
+#### Role
+
+Team leader and maintainer.
+
+
+#### Responsibilities
+
+- Integrate everyone's work for each release.
+- Ensure the game mechanics were consistent throughout each scene.
+- Design and implement core fighting functionality.
+- Design and implement objectives functionality.
+- Maintain the website.
+- Maintain the GitHub repository.
+
+### Jeremiah
+
+#### Role
+
+Game designer and developer developer. 
+
+#### Responsibilities
+
+- Design the internal workings of the UI.
+- Design and implement the inventory and player attributes functionality.
+- Implement development tasks for each release.
+
 ## References 
 ## Trailer 
 ## Screenshots
