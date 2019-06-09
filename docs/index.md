@@ -16,6 +16,9 @@ A playable demo of the game can be found [here](game/index.md)
 ## Credits 
 ## References 
 ## Trailer 
+
+The link to the trailer can be found [here](https://www.youtube.com/watch?v=whKKnu4EENQ&feature=youtu.be)
+
 ## Screenshots
 ## Source code
 
