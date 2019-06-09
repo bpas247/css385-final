@@ -48,7 +48,7 @@ public class InventroyScript : MonoBehaviour
 
         }
 
-        player = GameObject.FindGameObjectWithTag("MainPlayer");
+        player = GetComponentInParent<AccessPlayerScript>().player;
         AttributesScript att = player.GetComponent<AttributesScript>();
 
         skillPoints = 0;
@@ -140,18 +140,18 @@ public class InventroyScript : MonoBehaviour
 
         currentEquip = slotNumber;
 
-        GameObject mainPlayer = GameObject.FindWithTag("MainPlayer");
-        PlayerScript player = mainPlayer.GetComponent<PlayerScript>();
+        //GameObject mainPlayer = GameObject.FindWithTag("MainPlayer");
+        PlayerScript mainPlayer = player.GetComponent<PlayerScript>();
 
         GameObject itemEquip = slots[slotNumber].GetComponent<Slot>().item;
         ItemDropScript item = itemEquip.GetComponent<ItemDropScript>();
 
-        player.transform.Find("Body").gameObject.transform.Find("Right Arm").gameObject.transform.Find("Sword Long").gameObject.GetComponent<SwordScript>().
+        mainPlayer.transform.Find("Body").gameObject.transform.Find("Right Arm").gameObject.transform.Find("Sword Long").gameObject.GetComponent<SwordScript>().
             equipItem(itemEquip);
 
-        player.rotateSpeed = 500 * (float)(item.weaponSpeed);
+        mainPlayer.rotateSpeed = 500 * (float)(item.weaponSpeed);
 
-        player.transform.Find("Body").gameObject.transform.Find("Right Arm").gameObject.transform.Find("Sword Long").gameObject.transform.localScale = new Vector3(500, 500, 100 * (float)item.weaponRange);
+        mainPlayer.transform.Find("Body").gameObject.transform.Find("Right Arm").gameObject.transform.Find("Sword Long").gameObject.transform.localScale = new Vector3(500, 500, 100 * (float)item.weaponRange);
 
 
     }

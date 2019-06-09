@@ -52,7 +52,7 @@ public class SwordScript : MonoBehaviour
                 {
                     if(collision.transform.GetComponentInParent<EnemyScript>().xpRewarded == false)
                     {
-                        GameObject.FindWithTag("MainPlayer").GetComponent<AttributesScript>().Increase(AttributesScript.ATTRIBUTES.XP, 50);
+                        GameObject.Find("GameSystem").GetComponent<AccessPlayerScript>().player.GetComponent< AttributesScript>().Increase(AttributesScript.ATTRIBUTES.XP, 50);
                         collision.transform.GetComponentInParent<EnemyScript>().xpRewarded = true;
                     }
                     
@@ -69,7 +69,7 @@ public class SwordScript : MonoBehaviour
     public void equipItem(GameObject item)
     {
         equippedWeapon = item.GetComponent<ItemDropScript>();
-        GameObject.FindWithTag("MainPlayer").GetComponent<PlayerScript>().rotateSpeed = 500 * (float)(equippedWeapon.weaponSpeed);
+        GameObject.Find("GameSystem").GetComponent<AccessPlayerScript>().player.GetComponent<PlayerScript>().rotateSpeed = 500 * (float)(equippedWeapon.weaponSpeed);
 
     }
 
