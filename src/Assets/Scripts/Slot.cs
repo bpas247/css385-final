@@ -8,7 +8,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 {
     public GameObject item;
     public bool empty;
-    public Texture2D icon;
+    public Sprite icon;
     public int slotNum;
     public bool equipped;
 
@@ -44,7 +44,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
     public void UpdateSlot()
     {
-        this.GetComponent<Image>().sprite = Sprite.Create(icon, new Rect(0, 0, icon.width, icon.height) , new Vector2(0.5f, 0.5f));
+        this.GetComponent<Image>().sprite = icon;
     }
 
     // Update is called once per frame

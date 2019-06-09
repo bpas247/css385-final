@@ -26,6 +26,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb975886d47c29840b167c07f52022f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MAX_HEALTH: 0
 --- !u!1001 &7930164014790098336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101,12 +102,17 @@ PrefabInstance:
     - target: {fileID: 9200530942710491010, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MainPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 9200530943071482045, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MainPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200530941909072584, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 5242707015266488157, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
@@ -122,6 +128,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200530942547535763, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 9200530942710491068, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
@@ -142,6 +153,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200530941784278903, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200530942080086827, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200530942085801797, guid: ed81ef19f144a344593361f8ba25d0ed,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 9200530942547535759, guid: ed81ef19f144a344593361f8ba25d0ed,
         type: 3}
