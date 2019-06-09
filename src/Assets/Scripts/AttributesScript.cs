@@ -19,12 +19,14 @@ public class AttributesScript : MonoBehaviour
 
     void Start()
     {
-        attributes = new Dictionary<ATTRIBUTES, int>();
-        attributes.Add(ATTRIBUTES.HEALTH, MAX_HEALTH);
-        attributes.Add(ATTRIBUTES.XP, 0);
-        attributes.Add(ATTRIBUTES.SPEED, 0);
-        attributes.Add(ATTRIBUTES.DEFENSE, 0);
-        attributes.Add(ATTRIBUTES.LEVEL, 1);
+        attributes = new Dictionary<ATTRIBUTES, int>
+        {
+            { ATTRIBUTES.HEALTH, MAX_HEALTH },
+            { ATTRIBUTES.XP, 0 },
+            { ATTRIBUTES.SPEED, 0 },
+            { ATTRIBUTES.DEFENSE, 0 },
+            { ATTRIBUTES.LEVEL, 1 }
+        };
     }
 
     public void Increase(ATTRIBUTES attr, int toIncrease)
@@ -41,7 +43,23 @@ public class AttributesScript : MonoBehaviour
 
     public int GetValue(ATTRIBUTES attr)
     {
-        return attributes[attr];
+        int outVal = -1;
+
+        if(attributes == null)
+        {
+            return 0;
+        }
+
+        try
+        {
+            outVal = attributes[attr];
+        }
+        catch(KeyNotFoundException)
+        {
+            Debug.LogError("Key: " + attr + " isn't found on object ");
+        }
+
+        return outVal;
     }
 
     public void SetHealthMax()

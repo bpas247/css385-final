@@ -30,6 +30,7 @@ public class InventroyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GetComponentInParent<AccessPlayerScript>().player;
         currentEquip = -1;
         allSlots = 8;
         slots = new GameObject[allSlots];
@@ -47,14 +48,14 @@ public class InventroyScript : MonoBehaviour
 
         }
 
-        player = GameObject.FindGameObjectWithTag("MainPlayer");
+        player = GetComponentInParent<AccessPlayerScript>().player;
         AttributesScript att = player.GetComponent<AttributesScript>();
 
         skillPoints = 0;
         HP = att.MAX_HEALTH;
         Defense = att.GetValue(AttributesScript.ATTRIBUTES.DEFENSE);
         Speed = att.GetValue(AttributesScript.ATTRIBUTES.SPEED);
-        Level = att.GetValue(AttributesScript.ATTRIBUTES.LEVEL); ;
+        Level = att.GetValue(AttributesScript.ATTRIBUTES.LEVEL);
         HPText = inventory.transform.Find("XPSystem/HP").GetComponent<Text>();
         DefenseText = inventory.transform.Find("XPSystem/Defense").GetComponent<Text>();
         SpeedText = inventory.transform.Find("XPSystem/Speed").GetComponent<Text>();
@@ -139,18 +140,18 @@ public class InventroyScript : MonoBehaviour
 
         currentEquip = slotNumber;
 
-        GameObject mainPlayer = GameObject.FindWithTag("MainPlayer");
-        PlayerScript player = mainPlayer.GetComponent<PlayerScript>();
+        //GameObject mainPlayer = GameObject.FindWithTag("MainPlayer");
+        PlayerScript mainPlayer = player.GetComponent<PlayerScript>();
 
         GameObject itemEquip = slots[slotNumber].GetComponent<Slot>().item;
         ItemDropScript item = itemEquip.GetComponent<ItemDropScript>();
 
-        player.transform.Find("Body").gameObject.transform.Find("Right Arm").gameObject.transform.Find("Sword Long").gameObject.GetComponent<SwordScript>().
+        mainPlayer.transform.Find("Body").gameObject.transform.Find("Right Arm").gameObject.transform.Find("Sword Long").gameObject.GetComponent<SwordScript>().
             equipItem(itemEquip);
 
-        player.rotateSpeed = 500 * (float)(item.weaponSpeed);
+        mainPlayer.rotateSpeed = 500 * (float)(item.weaponSpeed);
 
-        player.transform.Find("Body").gameObject.transform.Find("Right Arm").gameObject.transform.Find("Sword Long").gameObject.transform.localScale = new Vector3(500, 500, 100 * (float)item.weaponRange);
+        mainPlayer.transform.Find("Body").gameObject.transform.Find("Right Arm").gameObject.transform.Find("Sword Long").gameObject.transform.localScale = new Vector3(500, 500, 100 * (float)item.weaponRange);
 
 
     }

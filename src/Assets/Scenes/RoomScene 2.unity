@@ -4145,6 +4145,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11a98ea2bc9f61d48b68624ddfd15f66, type: 3}
+--- !u!1 &1872694050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1270929899444214668, guid: 11a98ea2bc9f61d48b68624ddfd15f66,
+    type: 3}
+  m_PrefabInstance: {fileID: 1872694049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1876074974
 GameObject:
   m_ObjectHideFlags: 0
@@ -4243,11 +4249,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4542688822365306571, guid: 277cb92baad48ac48917e37e138955ee,
-        type: 3}
-      propertyPath: show
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8847358322858530773, guid: 277cb92baad48ac48917e37e138955ee,
         type: 3}
       propertyPath: m_Name
@@ -4357,6 +4358,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LevelSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713428765658481097, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1872694050}
+    - target: {fileID: 1117110912483565125, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1872694050}
+    - target: {fileID: 4542688822365306571, guid: 277cb92baad48ac48917e37e138955ee,
+        type: 3}
+      propertyPath: show
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277cb92baad48ac48917e37e138955ee, type: 3}

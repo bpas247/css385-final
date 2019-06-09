@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class ExperienceBar : MonoBehaviour
 {
-    GameObject player;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("MainPlayer");
+        player = GetComponentInParent<AccessPlayerScript>().player;
     }
 
     // Update is called once per frame
