@@ -1,5 +1,5 @@
 # Totally Accurate Fantasy RPG game 
 
-## [Home](index.md)
+## [Home](../index.md)
 
 ## Alpha Release Playtesting Reports
