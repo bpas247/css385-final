@@ -15,6 +15,19 @@ A playable demo of the game can be found [here](game/index.md)
 ## Playtesting Reports 
 ## Credits 
 ## References 
+
+- "3D Game Kit - Environment Pack." Unity Asset Store, Unity, Dec 14, 2018, 
+  https://assetstore.unity.com/packages/3d/3d-game-kit-environment-pack-135167.
+
+- "Medieval Sword." Unity Asset Store, ArtStation, Jan 6, 2017, 
+  https://assetstore.unity.com/packages/3d/medieval-sword-73359.
+
+- "Classic Treasure Box." Unity Asset Store,  MobileDesignLabo, Jun 10, 2013, 
+  https://assetstore.unity.com/packages/3d/props/classic-treasure-box-8952.
+
+- "ProgressBar Pack" Unity Asset Store, UPLN,  Jun 28, 2018, 
+  https://assetstore.unity.com/packages/tools/gui/progressbar-pack-120981. 
+
 ## Trailer 
 
 The link to the trailer can be found [here](https://www.youtube.com/watch?v=whKKnu4EENQ&feature=youtu.be)
