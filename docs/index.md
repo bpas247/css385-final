@@ -39,6 +39,7 @@ We currently have it available as a WebGL build, as a part of this website. Link
 - [Digital Prototype](logs/digital-prototype.md)
 - [Alpha](logs/alpha.md)
 - [Beta](logs/beta.md)
+- [Final](logs/final.md)
 
 ## Playable Game 
 
