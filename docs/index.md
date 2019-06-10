@@ -1,6 +1,22 @@
 # Totally Accurate Fantasy RPG game 
 
 ## Description 
+
+### Overview
+
+Totally Accurate Fantasy RPG Game (TAFRG for short) is a top-down ragdoll physics RPG dungeon crawler, inspired by the legendary game [Totally Accurate Battle Simulator](https://store.steampowered.com/app/508440/Totally_Accurate_Battle_Simulator/).
+
+### Features
+
+- Fight ragdoll enemies.
+- Loot downed enemies for better gear.
+- Level up your player attributes by defeating enemies.
+- Fight through various different dungeons.
+
+### Available Platforms
+
+We currently have it available as a WebGL build, as a part of this website. Link for it is found under the `Playable Game` section.
+
 ## Development Log 
 
 - [Paper Prototype](paper-prototype.md)
