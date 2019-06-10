@@ -19,16 +19,21 @@ We currently have it available as a WebGL build, as a part of this website. Link
 
 ## Development Log 
 
-- [Paper Prototype](paper-prototype.md)
-- [Digital Prototype](digital-prototype.md)
-- [Alpha](alpha.md)
-- [Beta](beta.md)
+- [Paper Prototype](logs/paper-prototype.md)
+- [Digital Prototype](logs/digital-prototype.md)
+- [Alpha](logs/alpha.md)
+- [Beta](logs/beta.md)
 
 ## Playable Game 
 
 A playable demo of the game can be found [here](game/index.md)
 
 ## Playtesting Reports 
+
+- [Alpha](reports/alpha.md)
+- [Beta](reports/beta.md)
+- [Final](reports/final.md)
+
 ## Credits 
 ## References 
 
