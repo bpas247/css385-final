@@ -1,4 +1,20 @@
-# Totally Accurate Fantasy RPG game 
+# Totally Accurate Fantasy RPG game <!-- omit in toc -->
+
+- [Description](#description)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Available Platforms](#available-platforms)
+- [Development Log](#development-log)
+- [Playable Game](#playable-game)
+- [Playtesting Reports](#playtesting-reports)
+- [Credits](#credits)
+- [References](#references)
+- [Trailer](#trailer)
+- [Screenshots](#screenshots)
+- [Source code](#source-code)
+- [Postmortem Presentation](#postmortem-presentation)
+- [Game Presentation](#game-presentation)
+- [Team Reflection](#team-reflection)
 
 ## Description 
 
