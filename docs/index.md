@@ -23,6 +23,7 @@ We currently have it available as a WebGL build, as a part of this website. Link
 - [Digital Prototype](digital-prototype.md)
 - [Alpha](alpha.md)
 - [Beta](beta.md)
+- [Final](final.md)
 
 ## Playable Game 
 
